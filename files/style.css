@@ -1,0 +1,380 @@
+/* CSS styling */
+
+.parent {
+  height: 97vh;
+  width: 80%;
+  display: block;
+  margin: auto;
+  display: grid;
+  gap: 1.5rem;
+  overflow: hidden;
+  grid-template-columns: 200px 300px 200px;
+  grid-template-rows: 90px;
+  background-color: #f5f5f5;
+}
+
+body {
+  height: 100vh;
+}
+.child {
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+.child1 h1 {
+  font-weight: bolder;
+  font-size: larger;
+}
+.child1 h1 span {
+  color: #7754d3;
+}
+
+.child1 img {
+  width: 100%;
+}
+.child1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  height: 250px;
+  padding: 1.5rem;
+  background-color: #faeee2;
+}
+.child2 {
+  grid-row: 2/3;
+  grid-column: 2/4;
+  height: 200px;
+  display: block;
+  background-color: #7651dc;
+  margin-top: -22%;
+
+  z-index: 22;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+.child2 H1 {
+  color: whITE;
+  display: block;
+  margin-left: 20%;
+  font-size: 2.5rem;
+  margin-top: 3%;
+}
+
+.child2 h1 span {
+  color: goldenrod;
+}
+.child2 h1 .one {
+  display: block;
+  margin-top: -10px;
+  color: white;
+}
+.child2 img {
+  width: 30%;
+  display: block;
+  margin: auto;
+  margin-top: -3%;
+  object-fit: cover;
+}
+.child2 p {
+  color: white;
+  display: block;
+  margin-left: 30%;
+  margin-bottom: 80%;
+}
+.child3 {
+  z-index: 44;
+  background-color: white;
+  display: block;
+  margin-top: 140%;
+  width: 80%;
+  padding: 1rem;
+  /* margin-left: %; */
+  height: 150%;
+}
+.child3 h1 {
+  display: block;
+  margin-top: 0%;
+}
+
+.child3 p {
+  display: block;
+  margin-top: -10%;
+}
+.child3 img {
+  width: 50%;
+  display: block;
+  margin-top: -1%;
+  margin-left: 20%;
+
+  z-index: 2222222;
+}
+
+.child4 {
+  grid-row: 2/3;
+  z-index: 3;
+  grid-column: 2/4;
+  position: absolute;
+  right: 10.5%;
+  bottom: 1%;
+  height: 145px;
+  width: 490px;
+  padding: 0.2rem;
+  background-color: #7651dc;
+}
+.child4 h1 {
+  color: white;
+  width: 40%;
+  font-size: x-large;
+  display: block;
+  margin-left: 50%;
+}
+
+.child4 img {
+  width: 40%;
+  object-fit: contain;
+  height: 130px;
+  /* object-fit: cover; */
+  display: block;
+  margin-top: -26%;
+}
+.child5 {
+  z-index: 34343;
+  grid-row: 1/3;
+  background-color: #dcd1fc;
+  height: 360px;
+  font-size: small;
+}
+.child5 img {
+  width: 90%;
+  display: block;
+  margin-top: -3%;
+
+  margin-left: 35%;
+  z-index: 22222222;
+}
+.child5 h1 {
+  display: block;
+  margin-left: 4%;
+}
+.child5 .p {
+  /* display: block; */
+  /* margin-bottom: 83%; */
+  position: absolute;
+  top: 50%;
+  width: 17%;
+  right: 10.5%;
+}
+.child6 h1 {
+  font-size: larger;
+}
+.child6 {
+  grid-row: 3/5;
+  grid-column: 1/2;
+  height: 300px;
+  display: block;
+  margin-top: -35%;
+  padding: 1rem;
+  background-color: #ffcc69;
+}
+.child6 img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.child7 {
+  display: block;
+  z-index: 22222222;
+  margin-top: 118%;
+  width: 120%;
+  height: 140%;
+  background-color: #ffcc69;
+  padding: 0.5rem;
+  margin-left: -28.5%;
+}
+
+.child7 img {
+  width: 60%;
+  display: block;
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+.child7 h1 {
+  display: block;
+  margin-top: -72.5%;
+  font-size: larger;
+}
+.child8 {
+  display: block;
+  margin-top: -50%;
+  height: 125px;
+  width: 80%;
+  background-color: white;
+  z-index: 2222222222222222222;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.child8 img {
+  width: 100%;
+  display: block;
+  margin-left: 0%;
+  z-index: 1;
+}
+
+.child8 h1 {
+  font-size: large;
+}
+.child89 {
+  display: none;
+}
+.br {
+  display: none;
+}
+
+/* Media query for mobile device */
+@media only screen and (max-width: 431px) {
+  body {
+    height: 300vh;
+  }
+  .parent {
+    border: 2px solid red;
+    display: block;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 2800px;
+  }
+  .child2 {
+    z-index: 2222222;
+    position: absolute;
+    top: 85%;
+    width: 312px;
+    height: 294px;
+  }
+  .child2 h1 {
+    display: block;
+    margin-left: 5%;
+  }
+
+  .child2 p {
+    margin-left: 17%;
+  }
+  .child2 img {
+    width: 50%;
+  }
+  .child7 {
+    z-index: 222222222;
+    position: absolute;
+    width: 73%;
+    height: 284px;
+    left: 40%;
+    top: 87%;
+  }
+  .child7 img {
+    width: 68%;
+    margin-left: revert-layer;
+    margin-bottom: 0%;
+  }
+
+  .child8 {
+    z-index: 2222222222222222;
+    position: absolute;
+    top: 137%;
+    width: 73%;
+    height: 182px;
+  }
+  .child1 {
+    z-index: 11111111222222211111;
+    height: 200px;
+    position: absolute;
+    top: 2%;
+    width: 283px;
+  }
+  .child1 h1 {
+    font-size: x-large;
+  }
+  .child1 img {
+    width: 60%;
+  }
+
+  .child4 {
+    position: absolute;
+    top: 279%;
+    z-index: 22222222222;
+    width: 77%;
+    height: 300px;
+  }
+  .child4 img {
+    width: 384px;
+    position: absolute;
+    object-fit: contain;
+    top: 113px;
+    height: 197px;
+    left: -8px;
+  }
+  .child4 h1 {
+    position: absolute;
+    z-index: 22222222222222222222;
+
+    width: 100%;
+    left: -151px;
+    top: 68%;
+  }
+
+  .child6 {
+    position: absolute;
+    top: 50%;
+    width: 70%;
+  }
+  .child6 img {
+    width: 200px;
+    height: 240px;
+  }
+  .child3 {
+    position: absolute;
+    top: 120%;
+    z-index: 2222222222222;
+    height: 24%;
+    width: 69%;
+  }
+
+  .child3 .in {
+    display: block;
+    margin-top: 5%;
+  }
+  .in p {
+    display: block;
+    margin-top: 1%;
+  }
+  .child3 img {
+    display: block;
+    margin-bottom: 20%;
+    margin-left: 22%;
+  }
+  .br {
+    display: block;
+  }
+  .child5 {
+    width: 100%;
+    display: block;
+    margin-top: 608%;
+    height: 533px;
+  }
+  .p {
+    display: block;
+    margin-top: 456%;
+    z-index: 2222222222222222222;
+    width: 1000px;
+    margin-left: 0%;
+  }
+  .p p {
+    /* width: 1000px; */
+    width: 338px;
+    display: block;
+    margin-left: -348%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+}
